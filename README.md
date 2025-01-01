@@ -33,11 +33,13 @@ lore ipsum
 
 **install a template package from a local nupkg file**
 
-`dotnet new install <PATH_TO_NUPKG_FILE>`
+`dotnet new install /home/marcom/data/repositories/DotNetAppTemplate/bin/Release/Meixner.DotNetTemplate.Console.0.0.0.1.nupkg`
 
+**Create new project based on template**
+`dotnet new myconsole  -n application1`
+
+---
 
 **Uninstall a template package**
 
 `dotnet new uninstall <NUGET_PACKAGE_ID>`
-
-

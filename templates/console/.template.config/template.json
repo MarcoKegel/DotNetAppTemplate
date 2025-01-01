@@ -3,7 +3,7 @@
   "author": "Marco Meixner",
   "classifications": [ "Common", "Console" , "di", "nlog", "nunit"],
   "identity": "Boilerplate.ConsoleTemplate.CSharp",
-  "name": "Boilerplate Console Application",
+  "name": "templates/console/.template.config/template.json",
   "shortName": "myconsole",
   "sourceName": "consolename_template" 
 }
