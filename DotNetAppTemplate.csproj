@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>$(NetCurrent)</TargetFramework>
+    <IncludeBuildOutput>False</IncludeBuildOutput>
+    <IncludeSource>False</IncludeSource>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputPath>$(ArtifactsTmpDir)</OutputPath>
+    <EnableDefaultItems>False</EnableDefaultItems>
+    <IsPackable>true</IsPackable>
+    <IsShipping>true</IsShipping>
+    <IsShippingPackage>true</IsShippingPackage>
+    <NoWarn>$(NoWarn);2008;NU5105</NoWarn>
+    <NoPackageAnalysis>true</NoPackageAnalysis>
+    <PackageId>Meixner.DotNetTemplate.Console</PackageId>
+    <language>en-US</language>
+    <PackageType>Template</PackageType>
+    <PackageVersion>0.0.0.1</PackageVersion>
+    <Title>Meixner Dotnet Template</Title>
+    <Authors>Marco Meixner</Authors>
+    <Description>Templates to use when creating an console application.</Description>
+    <PackageTags>dotnet-new;templates</PackageTags>
+    <SuppressDependenciesWhenPacking>True</SuppressDependenciesWhenPacking>
+  </PropertyGroup>
+
+<ItemGroup>
+    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <Compile Remove="**\*" />
+  </ItemGroup>
+
+</Project>
