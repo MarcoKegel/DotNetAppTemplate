@@ -27,12 +27,11 @@ public class Program
 
     private static void ConfigureServices(IServiceCollection serviceCollection)
     {
-        //TODO add logging
-        // serviceCollection.AddSingleton(new LoggerFactory()
-        //     .AddConsole()
-        //     .AddDebug());
-        // serviceCollection.AddLogging(); 
-
+        // Add logging
+        serviceCollection.AddSingleton(new LoggerFactory()
+            .AddConsole()
+            .AddDebug());
+        serviceCollection.AddLogging();
 
         var configuration = new ConfigurationBuilder()
             .SetBasePath(Directory.GetCurrentDirectory())
