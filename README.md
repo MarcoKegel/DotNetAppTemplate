@@ -29,11 +29,11 @@ lore ipsum
 
 **Pack a template into a NuGet package**
 
-`nuget pack`
+`$ .\build.sh`
 
 **install a template package from a local nupkg file**
 
-`dotnet new install /home/marcom/data/repositories/DotNetAppTemplate/bin/Release/Meixner.DotNetTemplate.Console.0.0.0.1.nupkg`
+`dotnet new install Meixner.DotNetTemplate.Console.0.0.0.1.nupkg`
 
 **Create new project based on template**
 `dotnet new myconsole  -n application1`

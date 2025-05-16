@@ -9,7 +9,11 @@ These requirements apply to the structure and content of this repository:
   - A `README.md` file explaining the purpose of the repository and how to use the templates.
   - A `LICENSE` file specifying the license for the repository.
   - A `doc` folder containing documentation, including this requirements file (`req.md`).
-  - Scripts to build, test, and publish the templates.
+
+### Scripts to build, test, and publish the templates.
+- the publish script should create the nuget package by using the dotnet cli
+- the package name should contain the version number referenced in the project file.
+- the publish script should inform the user how to import the template into the dotnet CLI with reference created file by refering to the package created by dotnet cli
 
 ## Template Requirements
 
