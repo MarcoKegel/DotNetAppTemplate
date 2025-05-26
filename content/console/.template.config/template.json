@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Marco Meixner",
+  "classifications": [ "Common", "Console" , "di", "nlog", "nunit"],
+  "identity": "Meixner.DotNetTemplate.Console",
+  "name": "Meixner DotNetTemplate Console",
+  "shortName": "myconsole",
+  "sourceName": "consolename_template" 
+}

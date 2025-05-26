@@ -15,7 +15,7 @@
     <PackageId>Meixner.DotNetTemplate.Console</PackageId>
     <language>en-US</language>
     <PackageType>Template</PackageType>
-    <PackageVersion>0.0.0.1</PackageVersion>
+    <PackageVersion>0.0.0.2</PackageVersion>
     <Title>Meixner Dotnet Template</Title>
     <Authors>Marco Meixner</Authors>
     <Description>Templates to use when creating an console application.</Description>
@@ -24,7 +24,7 @@
   </PropertyGroup>
 
 <ItemGroup>
-    <Content Include="templates\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
+    <Content Include="content\**\*" Exclude="templates\**\bin\**;templates\**\obj\**" />
     <Compile Remove="**\*" />
   </ItemGroup>
 

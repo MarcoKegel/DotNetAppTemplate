@@ -1,9 +1,0 @@
-{
-  "$schema": "http://json.schemastore.org/template",
-  "author": "Marco Meixner",
-  "classifications": [ "Common", "Console" , "di", "nlog", "nunit"],
-  "identity": "Boilerplate.ConsoleTemplate.CSharp",
-  "name": "templates/console/.template.config/template.json",
-  "shortName": "myconsole",
-  "sourceName": "consolename_template" 
-}
