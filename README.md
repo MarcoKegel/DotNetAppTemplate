@@ -29,17 +29,23 @@ lore ipsum
 
 **Pack a template into a NuGet package**
 
-`$ .\build.sh`
+`$ .\publish.sh`
 
 **install a template package from a local nupkg file**
 
 `dotnet new install Meixner.DotNetTemplate.Console.0.0.0.1.nupkg`
 
 **Create new project based on template**
+
 `dotnet new myconsole  -n application1`
+
+❗Templating ( dotnet new ) does not support casing (e.g. within the solution file). This need to be corrected manually.
 
 ---
 
 **Uninstall a template package**
 
-`dotnet new uninstall <NUGET_PACKAGE_ID>`
+`dotnet new uninstall Meixner.DotNetTemplate.Console`
+
+# Addional Information
+- [reference for template.json](https://github.com/dotnet/templating/wiki/Reference-for-template.json)
