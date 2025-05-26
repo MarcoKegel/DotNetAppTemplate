@@ -1,3 +1,4 @@
+using System.IO.Abstractions;
 using CommandLine;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -33,6 +34,8 @@ public class Program
 
         SetupLogging(serviceCollection, options);
         SetupConfiguration(serviceCollection, options);
+
+        serviceCollection.AddTransient<IFileSystem,FileSystem>();
 
         serviceCollection.AddTransient<IService, Service>();
         serviceCollection.AddTransient<App>();
