@@ -1,9 +1,21 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "Marco Meixner",
-  "classifications": [ "Common", "Console" , "di", "nlog", "nunit"],
+  "classifications": [
+    "Common",
+    "Console",
+    "di",
+    "nlog",
+    "nunit"
+  ],
   "identity": "Meixner.DotNetTemplate.Console",
   "name": "Meixner DotNetTemplate Console",
   "shortName": "myconsole",
-  "sourceName": "consolename_template" 
+  "sourceName": "consolename_template",
+  "exclude": [
+    "**/[Bb]in/**",
+    "**/[Oo]bj/**",
+    ".template.config/**/*",
+    "**/*.lock.json"
+  ]
 }
